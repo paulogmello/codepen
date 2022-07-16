@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+
+html,
+body,
+.fazenda,
+.container {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.container {
+  background-color: grey;
+  height: 100vh;
+  width: 100vw;
+}
+.contador {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.contador span {
+  margin: 10px 0;
+  font-size: 2em;
+  font-family: "Rubik", sans-serif;
+  pointer-events: none;
+  color: #383838;
+}
+
+.contador button {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #383838;
+}
+.contador button:hover {
+  box-shadow: 2px 2px #383838;
+}
+
+.fazenda {
+  height: 100%;
+  background: rgb(165, 247, 232);
+  background: linear-gradient(
+    180deg,
+    rgba(165, 247, 232, 1) 57%,
+    rgba(153, 169, 18, 1) 58%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fazendaimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ovelha {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: -95px;
+}
+
+.ovelha img {
+  height: 100%;
+  width: 100%;
+}

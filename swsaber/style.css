@@ -1,0 +1,117 @@
+body,
+html,
+.container {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-color: #151515;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#demo,
+p {
+  visibility: hidden;
+}
+.lightsaber-container {
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightsaber {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+#saber {
+  height: 100px;
+  transform: rotate(90deg);
+  width: auto;
+  margin: 0 0 2px 0;
+  z-index: 1;
+}
+.darkside {
+  background-color: white;
+  height: 10px;
+  width: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  margin-left: 60px;
+}
+.lightside {
+  background-color: white;
+  height: 10px;
+  width: 0px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  margin-left: 60px;
+}
+.choose {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidesname {
+  font-family: "Joan";
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+#light {
+  color: #2e67f8;
+}
+#dark {
+  color: #eb212e;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  background: #505050;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+
+h3 {
+  color: white;
+  font-family: "Joan", serif;
+}

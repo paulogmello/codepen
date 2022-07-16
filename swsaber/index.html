@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - StarWars Saber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="lightsaber-container">
+    <div class="lightsaber">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b63b52f4-e3cd-44ed-abae-c2972100be5c/dcedy9x-28c30129-56f9-459c-990b-adc65a762e5e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2M2I1MmY0LWUzY2QtNDRlZC1hYmFlLWMyOTcyMTAwYmU1Y1wvZGNlZHk5eC0yOGMzMDEyOS01NmY5LTQ1OWMtOTkwYi1hZGM2NWE3NjJlNWUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._rUREn58aEMGXcy3jLhQJ82zJiiNJou1G7HDlb7fJuk" id="saber">
+      <div class="darkside">
+      </div>
+      <div class="lightside">
+      </div>
+    </div>
+
+  </div>
+  <div class="choose">
+    <h3>Choose your side of the force</h3>
+    <input type="range" min="-50" max="50" value="0" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+    <div class="sidesname">
+      <h5 id="light">Light Side</h5>
+      <h5 id="dark">Dark Side</h5>
+    </div>
+  </div>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>

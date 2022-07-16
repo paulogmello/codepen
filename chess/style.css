@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #181818;
+  color: white;
+  /*   background: url(""); */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #353535;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: brown;
+  transform: scale(1.05);
+}
+
+.cavalo {
+  position: absolute;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -35px;
+}
+.p {
+  height: 40px;
+  width: 40px;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numeros {
+  display: flex;
+}
+.numeros ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.numeros li {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.letras {
+  display: flex;
+}
+.letras ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.letras li {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#torre {
+  max-height: 35px;
+  max-width: 35px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Períodos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h3>Calcular tempo de faculdade</h3>
+            <div class="col-sm">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Número de períodos POR ANO:</span>
+                    <input type="number" id="periodo" class="form-control" placeholder="" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Número de matérias POR PERÍODO:</span>
+                    <input type="number" id="materias" class="form-control" placeholder="" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Número de matérias no TOTAL:</span>
+                    <input type="number" id="mattotal" class="form-control" placeholder="" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <button class="btn btn-primary" id="gerar" onClick="show()">Descobrir</button> <p></p>
+                <span id="result"></span>
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
